@@ -1,6 +1,5 @@
 package tree
 
-
 func maxDepth(root *TreeNode) int {
 	i := 0
 	if root == nil {
