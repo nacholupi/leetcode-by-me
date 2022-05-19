@@ -49,15 +49,17 @@ func inorderTraversalIterative(root *TreeNode) []int {
 	stackNode := stack{root}
 	for !stackNode.isEmpty() {
 		r := stackNode.peek()
-		if r.Left == nil {
-			res = append(res, stackNode.pop().Val)
-			if r.Right != nil {
-				stackNode.push(r.Right)
-			}
-		}
 		if r.Left != nil {
 			stackNode.push(r.Left)
 			r.Left = nil
+			continue
+		}
+		res = append(res, stackNode.pop().Val)
+		if r.Right != nil {
+			stackNode.push(r.Right)
+			r.Right = nil
+			continue
+
 		}
 	}
 	return res
