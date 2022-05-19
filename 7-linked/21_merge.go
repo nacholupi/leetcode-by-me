@@ -1,9 +1,4 @@
-package mergearray
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+package linked
 
 func NewListNode(arr []int) *ListNode {
 	var first *ListNode

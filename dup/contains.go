@@ -1,7 +1,5 @@
 package dup
 
-import "fmt"
-
 func ContainsDuplicate(nums []int) bool {
 	m := make(map[int]struct{})
 	for _, val := range nums {

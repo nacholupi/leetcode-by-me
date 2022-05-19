@@ -1,4 +1,4 @@
-package reverselist
+package linked
 
 import (
 	"reflect"
