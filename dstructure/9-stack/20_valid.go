@@ -13,18 +13,6 @@ func (s *stack) isEmpty() bool {
 	return len(*s) == 0
 }
 
-//nolint:golint,unused, deadcode
-func rotate(nums []int, k int) {
-	left := nums[:k]
-	right := nums[k+1:]
-
-	copy(nums, right)
-
-	for j := range left {
-		nums[j+k] = left[j]
-	}
-}
-
 //nolint:golint,unused
 func (s *stack) pop() (rune, bool) {
 	if s.isEmpty() {
