@@ -24,7 +24,7 @@ func Test_hIndex(t *testing.T) {
 		{
 			name: "basic test 3",
 			args: args{citations: []int{3, 3, 3}},
-			want: 2,
+			want: 3,
 		},
 	}
 	for _, tt := range tests {
