@@ -1,4 +1,4 @@
-package tree
+package btree
 
 func hasPathSum(root *TreeNode, targetSum int) bool {
 	if root == nil {
