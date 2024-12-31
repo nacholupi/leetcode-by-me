@@ -1,4 +1,4 @@
-package tree
+package btree
 
 func maxDepth(root *TreeNode) int {
 	i := 0
