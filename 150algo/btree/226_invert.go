@@ -1,10 +1,4 @@
-package tree
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+package btree
 
 func invertTree(root *TreeNode) *TreeNode {
 	if root == nil {
