@@ -1,20 +1,16 @@
 package stack
 
-//nolint:golint,unused
-type stack []rune
+type aStack []rune
 
-//nolint:golint,unused
-func (s *stack) push(r rune) {
+func (s *aStack) push(r rune) {
 	*s = append(*s, r)
 }
 
-//nolint:golint,unused
-func (s *stack) isEmpty() bool {
+func (s *aStack) isEmpty() bool {
 	return len(*s) == 0
 }
 
-//nolint:golint,unused
-func (s *stack) pop() (rune, bool) {
+func (s *aStack) pop() (rune, bool) {
 	if s.isEmpty() {
 		return 0, false
 	}
@@ -24,9 +20,8 @@ func (s *stack) pop() (rune, bool) {
 	return e, true
 }
 
-//nolint:golint,unused, deadcode
-func isValid(s string) bool {
-	var st stack
+func IsValid(s string) bool {
+	var st aStack
 
 	for _, c := range s {
 		switch c {

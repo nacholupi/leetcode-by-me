@@ -1,5 +1,6 @@
 package linked
 
+// nolint: golint,unused
 func deleteDuplicates(head *ListNode) *ListNode {
 	h := head
 	for h != nil {

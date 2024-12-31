@@ -1,6 +1,7 @@
 package tree
 
 /* 701. Insert into a Binary Search Tree */
+// nolint: golint,unused
 func insertIntoBST(root *TreeNode, val int) *TreeNode {
 
 	if root == nil {
