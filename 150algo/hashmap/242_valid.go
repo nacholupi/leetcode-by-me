@@ -1,4 +1,4 @@
-package str
+package hashmap
 
 func isAnagram(s string, t string) bool {
 	if len(s) == 0 || len(t) == 0 || len(s) != len(t) {
