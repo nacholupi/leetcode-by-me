@@ -1,4 +1,4 @@
-package tree
+package bfs
 
 type TreeNode struct {
 	Val   int
@@ -38,3 +38,4 @@ func levelOrder(root *TreeNode) [][]int {
 
 	return res
 }
+
