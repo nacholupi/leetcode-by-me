@@ -56,9 +56,25 @@ func TestMergeTwoLists(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := MergeTwoLists(tt.args.first, tt.args.sec); !reflect.DeepEqual(got, tt.want) {
+			if got := mergeTwoLists(tt.args.first, tt.args.sec); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("MergeTwoLists() = %v, want %v", got, tt.want)
 			}
 		})
 	}
+}
+
+func NewListNode(arr []int) *ListNode {
+	var first *ListNode
+	var last *ListNode
+
+	for i, v := range arr {
+		nn := &ListNode{Val: v}
+		if i == 0 {
+			first = nn
+		} else {
+			last.Next = nn
+		}
+		last = nn
+	}
+	return first
 }
