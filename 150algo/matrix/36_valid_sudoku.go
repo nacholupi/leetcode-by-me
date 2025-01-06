@@ -1,4 +1,4 @@
-package array
+package matrix
 
 func isValidSudoku(board [][]byte) bool {
 	return validRows(board) && validCols(board) && validSquares(board)
