@@ -21,7 +21,7 @@ func TestClimbStairs(t *testing.T) {
 	}
 	for _, test := range tests {
 		if output := climbStairs(test.n); output != test.expected {
-			t.Error("Test Failed: {} expected, received: {}", test.expected, output)
+			t.Errorf("Test Failed: %d expected, received: %d", test.expected, output)
 		}
 	}
 }
