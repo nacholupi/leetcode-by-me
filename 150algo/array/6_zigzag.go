@@ -9,7 +9,7 @@ func convert(s string, numRows int) string {
 	}
 
 	var result strings.Builder
-	
+
 	cycleLen := (numRows - 1) * 2
 
 	for i := 0; i < numRows; i++ {
